@@ -1,0 +1,141 @@
+/* сброс стилей браузера 
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+		
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+ конец кода сброса стилей браузера */
+
+body {
+	width: 100%
+	height: 100%
+	font: 20px Arial, "Arial Black", Vernada, sans-serif;
+	color: #ff7518;
+	background-color: #d4cbb8;
+	font-weight: bold;
+}
+
+div#wrapper {
+	margin: auto;
+	max-width: 600px;
+}
+
+div#timeWrapper {
+	width: 500px;
+	height: 150px;
+	font-size: 100px;
+	margin: 0px auto 20px auto;
+	padding-top: 30px;
+	text-align: center;
+	border-bottom: 5px solid #b89465;
+}
+
+span#current {
+	font-size: 20px;
+	display: block;
+}
+
+form {
+	display: table;
+	margin-left: 60px;
+	float: left;
+	margin-right: 50px;
+	width: 220px;
+}
+
+form input {
+	display: table-cell;
+	height: 20px;
+	width: 40px;
+	color: #3eb489;
+	background-color: #d4cbb8;
+	border: none;
+	font-weight: bold;
+}
+
+form input#submit {
+	height: 50px;
+	width: 60px;
+}
+
+.tableRow {
+	display: table-row;
+	height: 50px;
+}
+
+form label, div#empty {
+	display: table-cell;
+	height: 100%;
+}
+
+rightWrapper > div, rightWrapper button {
+	margin-bottom: 10px;
+}
+
+.pass {
+	margin-bottom: 10px;
+}
+
+#total, #passed {
+	color: #3eb489;
+}
+
+button {
+	color: #3eb489;
+	background-color: #e8e4da;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	border: 1px solid #b89465;
+	width: 108px;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover {
+	background-color: #cdc5c2;
+	outline: none;
+}
+
+input::-moz-focus-inner {border:0;
+							}
+
+button::-moz-focus-inner {border:0;
+							}
+
+button#pause {
+	padding-left: 0px;
+	border-radius: 0px 20px 20px 0px;
+	margin-left: -5px;
+	width: 54px;
+}
+
+button#play {
+	padding-right: 0px;
+	border-radius: 20px 0px 0px 20px;
+	margin-right: -5px;
+	width: 54px;
+} 

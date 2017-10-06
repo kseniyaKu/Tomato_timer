@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Томатный таймер</title>
+		<link href="style.css" rel="stylesheet">
+		<!--<script src="jquery-3.2.1.min.js"></script>-->
+		
+		<style>
+			<!--[if IE]>
+				<style type="text/css">
+ 					 div#IEComment {
+						display: block;
+						margin: auto;
+						font-size: 20px;
+						color: #594429;
+						text-align: center;
+					}
+				div#case, div#display, a#button, a#button:hover {
+					background-image: none;
+				}
+			<![endif]-->
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="timeWrapper">
+				<span id="time"></span>
+				<span id="current"></span>
+			</div>
+			<form>
+				<div class = "tableRow">
+					<label for="timerSession">Session<br>(20-25 min)</label>
+					<input type="number" max="25" min="20" value="25" id="timerSession" id="timerSession">
+				</div>
+				<div class = "tableRow">
+					<label for="timerSmall">Little Break<br>(3-5 min)</label>
+					<input type="number" max="5" min="3" value="3" id="timerSmall" name="timerSmall">
+				</div>
+				<div class = "tableRow">
+					<label for="timerBig">Big Break<br>(15-30 min)</label>
+					<input type="number" max="30" min="15" value="15" id="timerBig" name="timerBig">
+				</div>
+				<div class = "tableRow">
+					<label for="remember">Remember my progress</label>
+					<input type="checkbox" id="remember" name="remember">
+				</div>
+			</form>
+			<div id="rightWrapper">
+			<div>
+				<div class="pass"><span>'Tomatoes' passed:</span></div>
+				<div class="pass"><span>total:</span>
+				<span id="total"></span>
+				</div>
+				<div class="pass">
+				<span>at current iteration:</span>
+				<span id="passed"></span>
+				</div>
+			</div>
+			<div>
+				<button id="play">play</button>
+				<button id="pause">pause</button>
+				<button id="stepForward">step forward</button><br>
+				<button id="reset">reset</button>
+			</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
